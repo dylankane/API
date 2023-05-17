@@ -16,7 +16,13 @@
             .then(response => response.text()) // or .json()
             .then(data => {
                 document.getElementById("content").innerText = data;
-            });
+            })
+
+            .catch((e) => {
+                console.error("error:",e)
+            })
+
+
     </script>
 
 </body>
